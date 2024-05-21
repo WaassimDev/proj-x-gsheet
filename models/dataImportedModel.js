@@ -9,7 +9,7 @@ const { sql, poolPromise } = require('../config/db');
  * @returns {Promise<Array>} - A promise that resolves to the retrieved data.
  * @throws {Error} - Throws an error if the query fails.
  */
-async function getImportedData(tableName, columns) {
+async function getImportedData(zetableName, columns) {
     try {
         // Await the resolved pool promise to get the connection pool.
         const pool = await poolPromise;
